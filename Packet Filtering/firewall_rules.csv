@@ -1,0 +1,9 @@
+Rule,Direction,Source address,Destination address,Protocol,Source port,Destination port,ACK,Action
+,,,,,,,,
+Spoof,In,c0 a8 08 80,Any,Any,Any,Any,Any,Deny
+,,,,,,,,
+Spoof,In,c0 a8 08 81,Any,Any,Any,Any,Any,Deny
+,,,,,,,,
+TCP-1,In,Any,Any,Any,c2 8b,Any,02,Deny
+,,,,,,,,
+UDP-1,In,Any,Any,Any,cd c4,Any,Any,Deny
