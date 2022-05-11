@@ -26,7 +26,7 @@ customSetting.Rules.push({
     },
   ],
 });
-app.use(Waf.WafMiddleware(wafrules.DefaultSettings));
+app.use(Waf.WafMiddleware(customSetting));
 
 //Create your routes in your way!
 app.use((req, res) => {
