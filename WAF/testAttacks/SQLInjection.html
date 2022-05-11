@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL Injection</title>
+  </head>
+  <body>
+    <script>
+      const domain = 'localhost';
+      const port = '3000';
+      const img = document.createElement('img');
+      // Always true (or 1=1) attacks
+      img.setAttribute('src', `http://${domain}:${port}/?UserId=105 OR 1=1;`);
+      document.body.appendChild(img);
+    </script>
+  </body>
+</html>

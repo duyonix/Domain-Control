@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
-    "mini-waf": "^0.4.99"
+    "mini-waf": "^0.4.99",
+    "nodemon": "^2.0.16"
   }
 }

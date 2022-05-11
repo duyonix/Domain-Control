@@ -19,7 +19,7 @@ customSetting.Rules.push({
 
       Attempts: {
         MaxAttempts: 100,
-        RenewAttemptsInterval: 600,
+        RenewAttemptsInterval: 1000,
       },
 
       Description: 'Possible DoS attack.',
