@@ -1,6 +1,13 @@
 # Domain Control with Packet Filtering, NAT, WAF, DMZ
 
-## MỤC LỤC
+## Thành viên
+
+- Đặng Thái Duy
+- Võ Hoàng Vũ
+- Nguyễn Hữu Bình
+- Đàm Thị Xuân Ý
+
+## Mục lục
 
 - [1. Domain Control](#1-domain-control)
   - [1.1. Định nghĩa](#11-định-nghĩa)
@@ -365,12 +372,15 @@ Ta chỉ cần tạo WAF tương tự như một middleware cho ứng dụng web
 Kiểm tra độ chịu đựng của trang web trước các cuộc tấn công:
 
 - DOS: Trong phần này mình sẽ tạo 100 hình ảnh có src là đường dẫn đến server, tương ứng nó sẽ tạo khoảng 100 requests đến server. Kết quả là WAF nhận ra đó có thể là DDOS nên chỉ cho thông qua một số request và chặn lại tất cả các request sau đó.
+
   ![DOS attack script](./assets/images/waf_dos.PNG)
   ![Server against DOS](./assets/images/waf_dos_protected.PNG)
 - SQL Injection: Tương tự, ta tạo 1 request có query param là 1 đoạn chứa câu lệnh SQL.
+
   ![SQL Injection attack script](./assets/images/waf_sqlinjection.PNG)
   ![Server against SQL Injection](./assets/images/waf_sqlinjection_protected.PNG)
 - XSS:
+
   ![XSS attack script](./assets/images/waf_xss.PNG)
   ![Server against XSS](./assets/images/waf_xss_protected.PNG)
 
