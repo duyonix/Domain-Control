@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
+# Domain Control with Packet Filtering, NAT, WAF, DMZ
 
-You can use the [editor on GitHub](https://github.com/duyonix/Domain-Control/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## MỤC LỤC
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- [1. Domain Control](#1-domain-control)
+  - [1.1. Định nghĩa](#11-định-nghĩa)
+    - [a) Domain](#a-domain)
+    - [b) Domain Controller](#b-domain-controller)
+  - [1.2. Vai trò](#12-vai-trò)
+    - [a) Global Catalog Server](#a-global-catalog-server)
+    - [b) Operation Master](#b-operation-master)
+- [2. Domain Control with Packet Filtering](#2-domain-control-with-packet-filtering)
+  - [2.1. Định nghĩa](#21-định-nghĩa)
+  - [2.2. Cơ chế](#22-cơ-chế)
+  - [2.3. Demo](#23-demo)
+- [3. Domain Control with NAT](#3-domain-control-with-nat)
+  - [3.1. Khái niệm NAT](#31-khái-niệm-nat)
+  - [3.2. Cơ chế NAT Firewall](#32-cơ-chế-nat-firewall)
+  - [3.3. Demo](#33-demo)
+    - [Ví dụ đầu tiên](#ví-dụ-đầu-tiên)
+- [4. Domain Control with WAF](#4-domain-control-with-waf)
+  - [4.1. Định nghĩa](#41-định-nghĩa)
+  - [4.2. Mục đích sử dụng](#42-mục-đích-sử-dụng)
+  - [4.3. Cơ chế](#43-cơ-chế)
+  - [4.4. Các loại WAF](#44-các-loại-waf)
+  - [4.5. Demo](#45-demo)
+- [5. Domain Control with DMZ](#5-domain-control-with-dmz)
+  - [5.1. Khái niệm DMZ (Demilitarized Zone)](#51-khái-niệm-dmz-demilitarized-zone)
+  - [5.2. Cơ chế](#52-cơ-chế)
+  - [5.3. Demo](#53-demo)
+- [6. Tổng kết](#6-tổng-kết)
+- [7. References](#7-references)
+<!-- - [8. Contributors](#8-contributors) -->
 
-### Markdown
+## 1. Domain Control
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### 1.1. Định nghĩa
 
-```markdown
-Syntax highlighted code block
+#### a) Domain
 
-# Header 1
-## Header 2
-### Header 3
+Domain là một mô tả tập hợp tất cả người dùng, máy chủ, hệ thống dữ liệu, mạng internet hay các tài nguyên bất kỳ được quản lý theo nguyên tắc chung. Một domain có thể có nhiều domain controller.
 
-- Bulleted
-- List
+#### b) Domain Controller
 
-1. Numbered
-2. List
+Domain controller là một hệ thống máy chủ được thiết lập với mục đích quản lý hay kiểm tra một tên miền bất kỳ nào đó.
 
-**Bold** and _Italic_ and `Code` text
+Domain controller hoạt động tương tự như một người gác cổng chịu trách nhiệm xác thực và ủy quyền user cũng như quản lý an ninh mạng và những vấn đề khác có liên quan đến dữ liệu.
 
-[Link](url) and ![Image](src)
-```
+Cách sử dụng: Toàn bộ Request của User sẽ được chuyển đến Domain Controller để được xác thực và ủy quyền. Trước khi truy cập theo Request tương ứng thì người dùng cần xác nhận danh tính của bản thân
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/duyonix/Domain-Control/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### 1.2. Vai trò
