@@ -113,6 +113,7 @@ Khi có 1 gói tin đi đến, nó sẽ đi qua packet filter trước để ki�
 ### 2.3. Demo
 
 **Lên ý tưởng**
+
 Ý tưởng xây dựng dựa trên minh họa sau đây: [Demo Idea](https://www.youtube.com/watch?v=x0SyDYp0Brg)
 
 Dựa trên ý tưởng này, mình xây dựng một chương trình python đơn giản để kiểm tra gói tin theo các firewall rules của Packet Filtering.
