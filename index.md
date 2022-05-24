@@ -1,43 +1,38 @@
 # Domain Control with Packet Filtering, NAT, WAF, DMZ
 
-## Thành viên
-
-- Đặng Thái Duy
-- Võ Hoàng Vũ
-- Nguyễn Hữu Bình
-- Đàm Thị Xuân Ý
-
 ## Mục lục
 
-- [1. Domain Control](#1-domain-control)
-  - [1.1. Định nghĩa](#11-định-nghĩa)
-    - [a) Domain](#a-domain)
-    - [b) Domain Controller](#b-domain-controller)
-  - [1.2. Vai trò](#12-vai-trò)
-    - [a) Global Catalog Server](#a-global-catalog-server)
-    - [b) Operation Master](#b-operation-master)
-- [2. Domain Control with Packet Filtering](#2-domain-control-with-packet-filtering)
-  - [2.1. Định nghĩa](#21-định-nghĩa)
-  - [2.2. Cơ chế](#22-cơ-chế)
-  - [2.3. Demo](#23-demo)
-- [3. Domain Control with NAT](#3-domain-control-with-nat)
-  - [3.1. Khái niệm NAT](#31-khái-niệm-nat)
-  - [3.2. Cơ chế NAT Firewall](#32-cơ-chế-nat-firewall)
-  - [3.3. Demo](#33-demo)
-    - [Ví dụ đầu tiên](#ví-dụ-đầu-tiên)
-- [4. Domain Control with WAF](#4-domain-control-with-waf)
-  - [4.1. Định nghĩa](#41-định-nghĩa)
-  - [4.2. Mục đích sử dụng](#42-mục-đích-sử-dụng)
-  - [4.3. Cơ chế](#43-cơ-chế)
-  - [4.4. Các loại WAF](#44-các-loại-waf)
-  - [4.5. Demo](#45-demo)
-- [5. Domain Control with DMZ](#5-domain-control-with-dmz)
-  - [5.1. Khái niệm DMZ (Demilitarized Zone)](#51-khái-niệm-dmz-demilitarized-zone)
-  - [5.2. Cơ chế](#52-cơ-chế)
-  - [5.3. Demo](#53-demo)
-- [6. Tổng kết](#6-tổng-kết)
-- [7. References](#7-references)
-<!-- - [8. Contributors](#8-contributors) -->
+- [Domain Control with Packet Filtering, NAT, WAF, DMZ](#domain-control-with-packet-filtering-nat-waf-dmz)
+  - [Mục lục](#mục-lục)
+  - [1. Domain Control](#1-domain-control)
+    - [1.1. Định nghĩa](#11-định-nghĩa)
+      - [a) Domain](#a-domain)
+      - [b) Domain Controller](#b-domain-controller)
+    - [1.2. Vai trò](#12-vai-trò)
+      - [a) Global Catalog Server](#a-global-catalog-server)
+      - [b) Operation Master](#b-operation-master)
+  - [2. Domain Control with Packet Filtering](#2-domain-control-with-packet-filtering)
+    - [2.1. Định nghĩa](#21-định-nghĩa)
+    - [2.2. Cơ chế](#22-cơ-chế)
+    - [2.3. Demo](#23-demo)
+  - [3. Domain Control with NAT](#3-domain-control-with-nat)
+    - [3.1. Khái niệm NAT](#31-khái-niệm-nat)
+    - [3.2. Cơ chế NAT Firewall](#32-cơ-chế-nat-firewall)
+    - [3.3. Demo](#33-demo)
+      - [Ví dụ đầu tiên](#ví-dụ-đầu-tiên)
+  - [4. Domain Control with WAF](#4-domain-control-with-waf)
+    - [4.1. Định nghĩa](#41-định-nghĩa)
+    - [4.2. Mục đích sử dụng](#42-mục-đích-sử-dụng)
+    - [4.3. Cơ chế](#43-cơ-chế)
+    - [4.4. Các loại WAF](#44-các-loại-waf)
+    - [4.5. Demo](#45-demo)
+  - [5. Domain Control with DMZ](#5-domain-control-with-dmz)
+    - [5.1. Khái niệm DMZ (Demilitarized Zone)](#51-khái-niệm-dmz-demilitarized-zone)
+    - [5.2. Cơ chế](#52-cơ-chế)
+    - [5.3. Demo](#53-demo)
+  - [6. Tổng kết](#6-tổng-kết)
+  - [7. References](#7-references)
+  - [8. Contributors](#8-contributors)
 
 ## 1. Domain Control
 
@@ -459,3 +454,20 @@ Sau đây là tóm lược lại thông tin của 4 dạng firewall liệt kê �
 - [14] [Should exchange be in dmz?](https://moviecultists.com/should-exchange-be-in-dmz)
 - [15] [Tăng cường bảo mật hệ thống mạng nội bộ với DMZ](https://securitybox.vn/1151/tang-cuong-bao-mat-he-thong-mang-noi-bo-voi-dmz/)
 - [16] [Vùng DMZ là gì? Sự liên kết giữa DMZ và vùng khác trong bảo mật hệ thống mạng](https://25giay.vn/hoi-dap/vung-dmz-la-gi.html)
+
+## 8. Contributors
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/duyonix"><img src="https://avatars.githubusercontent.com/u/67035766?v=4?s=100" width="100px;" alt="avatar"/><br /><sub><b>Đặng Thái Duy</b></sub></a><br /><a href="#" title="Content">🖋</a> <a href="#" title="Code">💻</a> <a href="#" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/vuvoivang"><img src="https://avatars.githubusercontent.com/u/76416172?v=4?s=100" width="100px;" alt="avatar"/><br /><sub><b>Võ Hoàng Vũ</b></sub></a><br /><a href="#" title="Content">🖋</a> <a href="#" title="Code">💻</a> <a href="#" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/ydam-k19"><img src="https://avatars.githubusercontent.com/u/91143821?v=4?s=100" width="100px;" alt="avatar"/><br /><sub><b>Đàm Thị Xuân Ý</b></sub></a><br /><a href="#" title="Content">🖋</a> <a href="#" title="Code">💻</a> <a href="#" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/binh-nguyen49-jh"><img src="https://avatars.githubusercontent.com/u/101536791?v=4?s=100" width="100px;" alt="avatar"/><br /><sub><b>Nguyễn Hữu Bình</b></sub></a><br /><a href="#" title="Content">🖋</a> <a href="#" title="Code">💻</a> <a href="#" title="Documentation">📖</a></td>
+  </tr>
+</table>
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
